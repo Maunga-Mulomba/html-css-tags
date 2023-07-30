@@ -1,0 +1,131 @@
+:root {
+  --border-style: 1px solid rgba(130, 130, 151, 0.632);
+  --highlight-color: #f24778;
+  --div-border-radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 140vh;
+  background-color: #fdfcff;
+}
+
+.container {
+  margin: 3rem 0;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 19px;
+  color: #141130;
+  display: block;
+  margin-bottom: 1rem;
+  font-family: "Lora", serif;
+}
+
+.add-tags input {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border: var(--border-style);
+  border-radius: var(--div-border-radius);
+}
+
+.examples {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.examples span {
+  color: #2d2fc9;
+  font-weight: 600;
+}
+
+.display-tags > div {
+  display: flex;
+  gap: 1rem;
+  border: var(--border-style);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.display-tags__tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #222143;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.display-tags__tag i {
+  font-size: 14px;
+}
+
+.deleted-tag {
+  background-color: var(--highlight-color);
+}
+
+.category {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.add-category > div,
+.dropdown__select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border: var(--border-style);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__select .fa-angle-up {
+  display: none;
+}
+
+.dropdown__menu {
+  background-color: white;
+  padding: 1rem;
+
+  box-shadow: 0 8px 10px 6px #d4d5ec;
+  border-radius: 4px;
+  display: none;
+}
+
+.dropdown__menu p {
+  cursor: pointer;
+  padding: 0.2rem;
+  transition: all 0.3s;
+}
+
+.dropdown__menu p:hover {
+  background-color: var(--highlight-color);
+}
+
+.dropdown:hover .dropdown__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  position: absolute;
+  width: 100%;
+}

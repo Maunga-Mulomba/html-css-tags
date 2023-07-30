@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="add-tags">
+        <label for="new-tag" class="heading">Tags</label>
+        <input
+          type="text"
+          name="new-tag"
+          id="new-tag"
+          placeholder="Add tags separated by comma"
+        />
+        <p class="examples">
+          For example:
+          <span>fitness app, dashboard, navigation, webshop, landing page</span>
+        </p>
+      </section>
+
+      <section class="display-tags">
+        <p class="heading">Tags</p>
+        <div>
+          <div class="display-tags__tag">
+            <p>tag name</p>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="display-tags__tag">
+            <p>tag name</p>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="display-tags__tag">
+            <p>tag name</p>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="display-tags__tag deleted-tag">
+            <p>About to be deleted</p>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <p class="examples">
+          For example:
+          <span>fitness app, dashboard, navigation, webshop, landing page</span>
+        </p>
+      </section>
+
+      <div class="category">
+        <section class="add-category">
+          <p class="heading">Category</p>
+          <div>
+            <p>Select something</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </section>
+
+        <section class="display-category">
+          <p class="heading">Category</p>
+          <div class="dropdown">
+            <div class="dropdown__select">
+              <p>Select something</p>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+
+            <div class="dropdown__menu">
+              <p>Web</p>
+              <p>Mobile</p>
+              <p>UI Kit</p>
+              <p>Coded</p>
+              <p>Other</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
